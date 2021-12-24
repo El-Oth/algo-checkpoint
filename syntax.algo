@@ -11,7 +11,7 @@ BEGIN
    write("Enter a caracter")
    read(c)
 
-     WHILE ( c  <> '.' AND c[c.lenght-1] === '.') DO
+     WHILE ( c  <> '.') DO
 
              IF (c === ' ') THEN
              blankSpace=blankSpace+1
