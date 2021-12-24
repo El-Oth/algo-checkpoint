@@ -1,0 +1,32 @@
+ALGORITHM sentence_read
+VAR
+   input: STRING;
+   vowels : CHAR;
+   count: INTEGER;
+   long: INTEGER;
+BEGIN
+   
+   vowels:= ARRAY_OF CHAR['a','o','u','i','e'];
+   counter:=1;
+   count:= 0;
+   long=: input.length;
+
+   read long;
+   
+   FOR i FROM 0 TO input.length STEP step  DO
+       WHILE (input[input.lenght-1] === '.') DO
+        IF (input[i] === ' ')) THEN
+           read counter++
+        END_IF
+        END_WHILE
+   END_FOR
+
+   FOR i FROM 0 TO input.length-1 STEP step  DO
+       FOR j FROM 0 TO vowels.length STEP step  DO
+           IF (input[i] == vowels[j])) THEN
+               read count++
+           END_IF
+       END_FOR
+   END_FOR
+
+END
